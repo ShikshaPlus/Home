@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIKSHA+</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome CSS (assuming you've already integrated it) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- Link your custom CSS (for styling) -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body,HTML{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    /* styles.css */
+
+/* Global Styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #333, #555);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Gradient Text */
+.gradient-text {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff9900, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.parallax > use {
+  animation: move_wave 15s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand font-weight-bold" href="#">SHIKSHA+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Courses</a>
+      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link" href="#">Contact</a>
+    </div>
+  </div>
+</nav>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="display font-weight-bold text-center">Welcome to SHIKSHA+</h1>
+                <p class="lead text-center">Innovative Learning solutions.</p>
+            </div>
+        </div>
+    </div>
+    
+<div class="col-lg-6">
+                <!-- SVG Decorations -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" class="footer-svg">
+                    <!-- Curvy Lines -->
+                    <path d="M0 50 Q 50 20, 100 50 T 200 50" stroke="blue" fill="transparent" />
+                    <!-- Circles -->
+                    <circle cx="50" cy="50" r="10" fill="#ff9900" />
+                    <circle cx="150" cy="50" r="8" fill="#ff3366" />
+                </svg>
+            </div>
+
+<!-- First Section with Graphic Designer Vibe -->
+<section class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+               
+                <h2 class="display-4 font-weight-bold">Tuition Classes</h2>
+               
+            </div>
+            <section id="about">
+    <div class="container">
+    
+        <p class="lead">At SHIKSHA+, we are committed to providing high-quality education and personalized guidance to students of all levels. Whether you're preparing for SEBA or CBSE board exams, our experienced faculty is here to support you every step of the way.</p>
+    </div>
+</section>
+<section id="offerings" class="bg-dark py-5">
+    <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+                <h3>Classes 6-10</h3>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Science (Physics, Chemistry, Biology)</li>
+                    <li>English</li>
+                    <li>Social Studies</li>
+                    <li>Hindi (if applicable)</li>
+                </ul>
+                <p class="lead">Our comprehensive curriculum ensures that students build a strong foundation in core subjects. We focus on conceptual understanding, problem-solving skills, and effective study techniques.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Classes 11-12</h3>
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>Biology</li>
+                    <li>English</li>
+                </ul>
+                <p class="lead">Our expert faculty members provide targeted coaching for students in classes 11 and 12. Whether you're aiming for competitive exams or seeking clarity in complex topics, SHIKSHA+ has you covered.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <div class="col-lg-6">
+                <!-- Curvy Lines and Circles -->
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="circle" style="background: linear-gradient(135deg, #808080, #555555);"></div>
+                    <svg height="50" width="100">
+                        <path d="M0 25 Q 50 0, 100 25" stroke="white" fill="transparent" />
+                    </svg>
+                    <div class="circle" style="background: linear-gradient(135deg, #808080, #555555);"></div>
+                    <svg height="50" width="100">
+                        <path d="M0 25 Q 50 50, 100 25" stroke="white" fill="transparent" />
+                    </svg>
+                    <div class="circle" style="background: linear-gradient(135deg, #808080, #555555);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Second Section with Contrast -->
+<section class="bg-light text-dark py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="display-4 font-weight-bold">Coaching Classes</h2>
+               
+            </div>
+            <section id="government-exams" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Government Job Recruitment Exams</h2>
+        <p class="lead">At SHIKSHA+, we understand the importance of government job opportunities. Our specialized coaching prepares you for various competitive exams conducted by government bodies. Whether it's banking, SSC, railways, or other central and state-level exams, we provide comprehensive guidance to help you succeed.</p>
+        <p class="lead">Subjects Covered:</p>
+        <ul>
+            <li>Mathematics</li>
+            <li>Reasoning</li>
+            <li>English</li>
+            <li>General Studies</li>
+            <!-- Add any additional subjects here -->
+        </ul>
+    </div>
+</section>
+
+
+            <div class="col-lg-6">
+                <!-- Curvy Lines and Circles (Light Version) -->
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="circle" style="background: linear-gradient(135deg, #f0f0f0, #d1d1d1);"></div>
+                    <svg height="50" width="100">
+                        <path d="M0 25 Q 50 0, 100 25" stroke="black" fill="transparent" />
+                    </svg>
+                    <div class="circle" style="background: linear-gradient(135deg, #f0f0f0, #d1d1d1);"></div>
+                    <svg height="50" width="100">
+                        <path d="M0 25 Q 50 50, 100 25" stroke="black" fill="transparent" />
+                    </svg>
+                    <div class="circle" style="background: linear-gradient(135deg, #f0f0f0, #d1d1d1);"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Third Section: Graphic Design Talent Showcase -->
+<section class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="display-4 font-weight-bold">Start your Journey</h2>
+                <p class="lead">Explore our courses and find the suitable one for you.</p>
+                <a href="#" class="btn btn-primary btn-lg">Courses</a>
+            </div>
+            <div class="col-lg-6">
+                <!-- SVG Artwork -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="img-fluid">
+                    <!-- Circles -->
+                    <circle cx="50" cy="50" r="40" fill="#ff9900" />
+                    <circle cx="150" cy="50" r="30" fill="#ff3366" />
+                    <!-- Lines -->
+                    <line x1="50" y1="50" x2="150" y2="50" stroke="white" stroke-width="2" />
+                    <line x1="50" y1="50" x2="150" y2="100" stroke="white" stroke-width="2" />
+                    <!-- Text -->
+                    <text x="100" y="140" font-family="Arial" font-size="14" fill="white" text-anchor="middle">
+                        न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Us Section -->
+<section class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="display-4 font-weight-bold">Get in Touch</h2>
+                <p class="lead">for study materials</p>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color: #6dd5ed; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #2193b0; stop-opacity: 1" />
+    </linearGradient>
+    <path id="gentle-wave" d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z"/>
+  </defs>
+  <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="url(#gradient)" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.7)" />
+  </g>
+</svg>
+
+
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>Contact Us</h4>
+                <p>Opposite to Post Office, Station Road, Dhemaji,787057</p>
+                <p>Dhemaji, Assam</p>
+                <p>Email: shikshaplus@gmail.com</p>
+                <p>Phone: +91 6001608578</p>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<footer class="footer text-light">
+    All rights reserved &copy; SHIKSHA+
+</footer>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your custom jQuery scripts (if needed) -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
