@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SHIKSHA Express</title>
+    <link rel="stylesheet" href="parallax.css">
+    <!-- Add the FontAwesome stylesheet link in the head of your document -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- Use FontAwesome icons in your HTML where needed -->
+<style>
+    @layer base {
+    body {
+        font-family: 'New York Times', serif;
+        background: #f5f5f5;
+        color: #333;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    header h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 5px;
+        
+    }
+    header span {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #f1d8d8;
+        padding: 10px;
+    }
+    header sup{
+        font-weight:900 ;
+        font-size: 55px;
+        color: red;
+    }
+    header p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    main {
+        column-count: 3;
+        column-gap: 40px;
+    }
+    article {
+        margin-bottom: 30px;
+        break-inside: avoid-page;
+    }
+    article header h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    article header p {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    article figure {
+        margin: 0;
+        padding: 0;
+    }
+    article figure img {
+        width: 100%;
+        height: auto;
+    }
+    article figure figcaption {
+        text-align: center;
+        font-style: italic;
+        margin-top: 5px;
+    }
+    article p {
+        text-align: justify;
+    }
+    section {
+        padding: 10px 0;
+    }
+    section h3 {
+        font-size: 40px;
+        border-bottom: 2px solid #333;
+        margin-bottom: 15px;
+    }
+    section h4 {
+        font-size: 20px;
+    }
+    footer {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@layer components {
+    .article {
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .opinion article, .weather article {
+        background: #eee;
+        padding: 15px;
+        border-left: 4px solid #333;
+    }
+}
+
+@layer utilities {
+    .dark-theme {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+@layer themes {
+    .article:nth-child(odd) {
+        background: #fcfcfc;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        column-count: 1;
+    }
+}
+
+/* Style the FontAwesome icons */
+.fas {
+    margin-right: 10px;
+}
+
+header .fas {
+    font-size: 40px;
+}
+
+.weather .fas {
+    font-size: 24px;
+}
+
+footer .fas {
+    font-size: 16px;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <i class="fas fa-newspaper"></i>
+        <h1>The <span>SHIKSHA<sup>+</sup></span> Express</h1>
+        <p><time datetime="2024-04-20">Saturday, April 20, 2024</time></p>
+    </header>
+
+    <hr>
+    <main>
+        <article>
+            <header>
+                <h2>SHIKSHA+ Tuition Center: For class VI to XII</h2>
+                <p>By local correspondent</p>
+            </header>
+            <figure>
+                <img src="https://source.unsplash.com/360x240/?classroom" alt="Market Image">
+                <figcaption>A glimpse of SHIKSHA+ Dhemaji center.</figcaption>
+            </figure>
+            <p>Dhemaji, Assam, April 20, 2024 – SHIKSHA+, the trusted coaching institute located opposite the Post Office on Station Road, has taken significant steps to enhance the learning experience for students. As a leading center for tuition coaching, SHIKSHA+ prioritizes excellence, safety, and affordability.
+                
+                Key Highlights:
+
+                1. Qualified Faculty: Our team of dedicated educators meets rigorous standards. Students benefit from expert guidance in all subjects.
+                
+                2. Modern Infrastructure: SHIKSHA+ has upgraded its facilities, ensuring comfortable classrooms and adherence to safety norms.
+                
+                3. Parent-Teacher Engagement: Regular interactions between parents and teachers foster a supportive learning environment.
+                
+                4. Affordable Fees: We understand financial constraints and have adjusted our fee structure to make quality education accessible.
+                
+                5. Mock Tests and Practice Sessions: To prepare students for board exams, SHIKSHA+ conducts regular mock tests and practice sessions.
+                
+                Parents and students can trust SHIKSHA+ to provide a conducive learning environment that nurtures academic excellence. Visit our center today and explore the path to success!</p>
+        </article>
+
+        <article>
+            <header>
+                <h2>Job Coaching at SHIKSHA+: Your Path to Success</h2>
+                <p>By local correspondent</p>
+            </header>
+            <figure>
+                <img src="https://source.unsplash.com/360x240/?job" alt="Sports Image">
+                <figcaption>A glimpse of tthe journey.</figcaption>
+            </figure>
+            <p>Dhemaji, Assam, April 20, 2024 – Aspiring candidates looking to crack government job recruitment exams now have a reliable partner in SHIKSHA+. Located opposite the Post Office on Station Road, SHIKSHA+ offers specialized coaching for exams conducted by SSC, banking institutions, railways, and ADRE (Assam Direct Recruitment Exams).
+
+                Why Choose SHIKSHA+ for Job Coaching?
+                
+                1. Experienced Faculty: Our team includes retired government officials, subject matter experts, and industry professionals. They provide comprehensive guidance to help you succeed.
+                
+                2. Customized Study Plans: Tailored study plans ensure you cover all necessary topics. Whether it's time management, subject-wise preparation, or mock interviews, we've got you covered.
+                
+                3. Regular Mock Tests: To simulate the actual exam environment, SHIKSHA+ conducts regular mock tests. These tests help you gauge your progress and build confidence.
+                
+                4. Current Affairs Updates: Staying updated with current affairs is crucial for competitive exams. SHIKSHA+ provides curated materials and discussions on relevant topics.
+                
+                5. Interview Preparation: Apart from written exams, SHIKSHA+ focuses on interview preparation. Our experts guide you on effective communication, body language, and handling interview questions.
+                
+                Join SHIKSHA+ and let us be your stepping stone toward a successful career in government services. We believe in empowering aspirants to achieve their dreams.
+                
+                </p>
+        </article>
+        <section class="opinion">
+            <h3><i class="fas fa-pen"></i>Quotes</h3>
+            <article>
+                <h4>"Education is not preparation for life; education is life itself."</h4>
+                <p>- John Dewey</litp>
+            </article>
+            <article>
+                <h4>"Live as if you were to die tomorrow. Learn as if you were to live forever."</h4>
+                <p>- Mahatma Gandhi</p>
+            </article>
+        </section>
+        <section class="weather">
+            <h3><i class="fas fa-cloud-sun"></i>Weather Forecast</h3>
+            <p>
+                Today's Outlook: Expect a warm front of knowledge and opportunity sweeping through Dhemaji, Assam, courtesy of Shiksha Plus Institute! As the leading educational hub in the region, we're your go-to destination for academic excellence and career success. <br>
+                
+                Academic Pressure Low, Learning Satisfaction High: Our expert faculty and tailored programs ensure a comfortable learning climate, with a 100% chance of academic growth and achievement. Whether you're in grade 6 or gearing up for government job exams, we've got the forecast for success! <br>
+                
+                Extracurricular Activities: Sunny with a Chance of Fun! Step into our vibrant campus where cultural celebrations like Bihu dance performances and more await. With a mix of academics and extracurriculars, every day at Shiksha Plus promises sunshine and smiles. <br>
+                
+                Extended Forecast: Looking ahead, expect continued innovation with our upcoming website and digital classes, making education accessible anytime, anywhere. Don't miss out on the learning revolution - enroll now and let Shiksha Plus be your guiding star!</p>
+        </section>
+        <!-- Additional news sections -->
+        <section class="international">
+            <h3><i class="fas fa-mobile"></i>Technology</h3>
+            <article>
+                <h4>Shiksha Plus Goes Digital: Bringing Quality Education to Your Doorstep in Dhemaji</h4>
+                <p>Dhemaji, Assam, April 20, 2024 – Exciting times are ahead for education in Dhemaji, Assam, as Shiksha Plus gears up to go digital. Known for their top-notch coaching from grades 6 to 12 and specialized government job exam prep, Shiksha Plus is now making learning even more convenient with the launch of their website and online classes. Whether you're a student aiming to ace your exams or a job seeker striving for success, Shiksha Plus is bringing quality education right to your fingertips. <br>
+
+                    With this digital expansion, students and job aspirants in Dhemaji can now access expert guidance and study materials from the comfort of their homes. No more commuting or scheduling conflicts – just seamless learning tailored to your needs. Shiksha Plus is committed to empowering individuals with the knowledge and skills they need to excel academically and professionally, and their move to the digital realm is a testament to that commitment.</p>
+            </article>
+            
+        </section>
+        
+        <section class="technology">
+            <h3><i class="fas fa-trophy"></i>Achievements</h3>
+            <article>
+                <h4>Shiksha Plus Empowers Students with Scholarships and Mock Tests Across Dhemaji Region!</h4>
+                <p>Dhemaji, Assam, April 20, 2024 – In a remarkable display of educational support, Shiksha Plus institute recently orchestrated scholarship cum mock tests across several locales, including Gogamukh and Bordoloni, with an overwhelming participation of over 200 students. This initiative, designed to not only replicate the rigors of real exam settings but also to extend financial aid to deserving candidates, underscores the institute's commitment to nurturing academic talent and breaking down financial barriers to education. <br>
+
+                    The event's success speaks volumes about the dedication of Shiksha Plus towards promoting academic excellence and ensuring equal opportunities for all students. By offering scholarships based on merit, the institute aims to recognize and reward the hard work and dedication of talented individuals, thereby fostering a culture of learning and empowerment within the community. With such initiatives, Shiksha Plus continues to be a beacon of hope for students, providing not just educational support but also paving the way for a brighter future for the youth of the region.</p>
+            </article>
+            
+        </section>
+        <section class="culture">
+            <h3><i class="fas fa-music"></i>Arts and Culture</h3>
+            <article>
+                <figure>
+                    <img src="https://source.unsplash.com/360x240/?assam" alt="Sports Image">
+                    <figcaption>The local team triumphs in a stunning victory.</figcaption>
+                </figure>
+                <h4>Bihu celebration at SHIKSHA+ campus</h4>
+                <p>Dhemaji, Assam, April 12, 2024 – In a vibrant celebration of Assamese culture, Shiksha Plus institute recently hosted a joyous Bihu festival on its campus in Dhemaji, Assam. The event brought together teachers and students alike, fostering a sense of community and camaraderie. Amidst colorful decorations and traditional music, the highlight of the festivities was the spirited performances by the students, who enthralled the audience with their energetic Bihu dances and captivating cultural performances. <br>
+
+                    The air was filled with excitement and laughter as students showcased their talents, spreading the joyous spirit of Bihu throughout the campus. From traditional Bihu dances to mesmerizing cultural performances, the event served as a platform for students to express their creativity and pride in Assamese heritage. As the beats of the dhol and the rhythms of folk songs echoed through the campus, the celebration served as a reminder of the rich cultural tapestry that binds the community together.</p>
+            </article>
+            
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p> <i class="fas fa-copy"></i>© 2024 The SHIKSHA+ Express. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+ 
+
